@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=8, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="Book a call">
+    <h1> <center>Book a call</center></h1>
+    <p> <center> If you want to book a call</center>  </p>
+    <p>Name <input type="text" name="Name" id="Name"></p>
+    <br>
+    <p>Email <input type="email" name="email" id="email"></p>
+    <br>
+     <p>Phone <input type="number" name="phone" id="phone"></p>
+     <br>
+     <p>Time for call <input type="date" name="date" id="date">
+          <input type="time" name="time" id="time"></p>
+          <p> Submit <button>Get a call</button></p>
+
+        </form>
+        <script>
+          document.getElementById("callForm").addEventListener("submit", function(event) {
+              event.preventDefault(); // Prevent form submission
+              var name = document.getElementById("Name").value;
+              var email = document.getElementById("email").value;
+              var phone = document.getElementById("phone").value;
+              var date = document.getElementById("date").value;
+              var time = document.getElementById("time").value;
+  
+              // Perform your desired action with the form data
+              // For example, you can display an alert message
+              alert("Call booked for " + name + " on " + date + " at " + time + ". We will contact you at
+         
+
+
+          </script>
+</body>
+</html> 
